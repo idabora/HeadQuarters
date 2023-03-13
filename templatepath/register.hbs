@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Register here</title>
+</head>
+
+<body>
+
+    {{!-- {{>header}}
+
+    {{#if message}}
+        <div style="width:100%;  padding:4px; color:rgb(0, 0, 0); border:1px solid rgb(233, 14, 14); background-color:rgb(226, 101, 101); text-align:center;"> {{message}} </div>
+    {{/if}} --}}
+    
+    <div class="section">
+        <form  method="post" onsubmit=" event.preventDefault(); validateform();" id="register">
+            <input type='text' placeholder="Username" name='username' value="username" required>
+            <input type="email" placeholder="Email ID" name="email">
+            <div>
+                <label for="dob">DOB.</label>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+            <div class='gender'>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="male" required>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="female" required>
+            </div>
+            <input type="password" name="password" id="pswd" placeholder="Password" required>
+            <input type="password" name="confirm_p" id="cpswd" placeholder="Confirm Password" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script>
+        var password = document.getElementById('pswd').value;
+        var cpassword = document.getElementById('cpswd').value;
+        var formdetails = document.getElementById('register');
+
+        function validateform() {
+            if (password != cpassword) {
+                alert("Passwords are not matching!!");
+            } else {
+                formdetails.submit();
+            }
+        }
+
+    </script>
+</body>
+
+</html>

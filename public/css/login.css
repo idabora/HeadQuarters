@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: grey;
+}
+.section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+row-gap: 2rem;;
+height:50vh;
+width:50%;
+background-color: cadetblue;
+}
+input{
+    padding:5px;
+    width:70%;
+}

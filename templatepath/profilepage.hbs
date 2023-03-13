@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/home.css">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    {{!--
+    <script>
+        var userLoggedIn = !{ userLoggedInJS };
+    </script> --}}
+
+    <div class="container">
+
+        <nav class="navbar">
+            <div id="logo"><img src="/images/Reddit_logo_full_1.png" alt="logo"></div>
+            <ul>
+                <!-- <div href="#" id="logo"  ><img src="Reddit_logo_full_1.png" alt="logo"></div> -->
+                <a class="topicon"><i class="fa-solid fa-hippo"></i> Home</a>
+                <a><i class="fa-solid fa-hippo"></i> Messages</a>
+                <a><i class="fa-solid fa-hippo"></i> Notifications</a>
+                <a href="/profile"><i class="fa-solid fa-hippo"></i> Profile</a>
+                <a href="/logout">
+                    <i class="fa-solid fa-hippo">
+                    </i> Logout
+                </a>
+
+            </ul>
+        </nav>
+        <div class="mainsection">
+            {{profileUser.Name}}
+            <div class="profileheadercontainer">
+                <div class="coverphotocontainer">
+
+
+                    <div class="profileimagecontainer">
+                        <img class='profilePic' src='{{profileUser.Profile_pic}}' alt="Photo">
+                    </div>
+                </div>
+                {{!-- {{#if profileUser._id != userLoggedIn._id}} --}}
+                <div class="profilebuttoncontainer">
+                    <a href=`/messages/${profileUser._id}` class="profilebutton">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="userName">
+                    <div class="profileusername1" style="font-weight:bold;">
+                        {{profileUser.Name}}
+                    </div>
+                    <div class="profileusername2">
+                        @{{profileUser.Name}}
+                    </div>
+                </div>
+                <div class="about">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo optio nesciunt laborum odit impedit
+                    repudiandae in ipsum perspiciatis, voluptatibus, praesentium facilis laudantium, magnam eligendi
+                    nihil ad rem dicta sint! Voluptas quos id beatae voluptatum! Error, laborum quo magni, magnam
+                    possimus praesentium sed ipsum similique amet et libero ullam optio illum.
+                </div>
+            </div>
+            {{!-- <div class="profileposts">
+                <div class="heading">
+                Posts
+                </div>
+                <div class="postcontainer">
+                        {{!-- {{>partials1}} --}}
+                {{!-- </div>
+            </div>
+
+
+        </div>
+        <div class="ads">
+            jbkchdc
+        </div> --}} 
+
+
+    </div>
+    <script src="/js/common.js"></script>
+</body>
+</body>
+
+</html>

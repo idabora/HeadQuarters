@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    {{!--
+    <script>
+        var userLoggedIn = !{ userLoggedInJS };
+    </script> --}}
+
+    <div class="container">
+
+        <nav class="navbar">
+            <div id="logo"><img src="/images/Reddit_logo_full_1.png" alt="logo"></div>
+            <ul>
+                <!-- <div href="#" id="logo"  ><img src="Reddit_logo_full_1.png" alt="logo"></div> -->
+                <a class="topicon"><i class="fa-solid fa-hippo"></i> Home</a>
+                <a><i class="fa-solid fa-hippo"></i> Messages</a>
+                <a><i class="fa-solid fa-hippo"></i> Notifications</a>
+                <a href="/profile"><i class="fa-solid fa-hippo"></i> Profile</a>
+                <a href="/logout">
+                    <i class="fa-solid fa-hippo">
+                    </i> Logout
+                </a>
+
+            </ul>
+        </nav>
+        <div class="mainsection">
+
+            <div class="page">
+                <h2>Home</h2>
+            </div>
+
+            {{#if message2}}
+            <p>{{message2}}</p>
+            {{/if }}
+            <div id="post">
+                {{>partials1}}
+            </div>
+            <div class="postcontainer">
+                {{>partials2}}
+            </div>
+        </div>
+        <div class="ads">
+            jbkchdc
+        </div>
+
+
+    </div>
+    <script src="/js/common.js"></script>
+</body>
+</body>
+
+</html>
+
+
+
+
+{{!--
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="xy.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="navbar">
+            <div id="logo"><img src="Reddit_logo_full_1.png" alt="logo"></div>
+            <ul>
+                <!-- <div href="#" id="logo"  ><img src="Reddit_logo_full_1.png" alt="logo"></div> -->
+                <a class="topicon"><i class="fa-solid fa-hippo"></i> Home</a>
+                <a><i class="fa-solid fa-hippo"></i> Messages</a>
+                <a><i class="fa-solid fa-hippo"></i> Explore</a>
+                <a><i class="fa-solid fa-hippo"></i> Notifications</a>
+                <a href="/logout">
+                    <i class="fa-solid fa-hippo">
+                    </i> Logout
+                </a>
+
+            </ul>
+        </nav>
+        <div class="mainsection">
+            <div class="page">
+                <h2>Home</h2>
+
+                <!-- {{#if message2}}
+                    <div>{{message2}}</div>
+                    {{/if }} -->
+
+
+            </div>
+            <p class="name">Anurodh</p>
+
+
+        </div>
+        <div class="ads">
+            jbkchdc
+        </div>
+
+</body>
+
+</html> --}}
